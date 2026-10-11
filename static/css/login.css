@@ -1,0 +1,69 @@
+/* Фон всей страницы */
+body {
+    min-height: 100vh;
+    margin: 0;
+    background:
+        radial-gradient(
+            circle at 75% 50%,
+            #38281f 0%,
+            #211b1b 35%,
+            #171518 75%
+        );
+}
+
+
+/* Основной блок */
+.login-box {
+    width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+
+    background-color: #131111;
+    border-radius: 15px;
+}
+
+
+/* Заголовок */
+.login-box h1 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+
+/* Подписи */
+.login-box label {
+    display: block;
+    color: white;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+
+/* Поля ввода */
+.login-box input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #3B2F27;
+    border: 1px solid #3B2F27;
+    border-radius: 12px;
+
+    color: white;
+    padding: 10px 12px;
+}
+
+
+/* Когда нажимаешь на поле */
+.login-box input:focus {
+    background-color: #3B2F27;
+    color: white;
+    border-color: #8b735f;
+    box-shadow: none;
+}
+
+
+/* Кнопка */
+.login-box button {
+    margin-top: 20px;
+}

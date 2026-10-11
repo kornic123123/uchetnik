@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Текущие задания
+{% endblock %}
+
+{% block body %}
+<h1 class="task-title">Задачи</h1>
+
+<div class="row mt-4">
+
+
+<!-- окна 1 -->
+    <div class="col-md-3">
+        <div class="task">
+            <div class="task-body">
+                <h5 class="task-title">Задания</h5>
+                <p class="task-text">12 заданий</p>
+                <button type="button" class="btn btn-primary border-0" onclick="openModal('allTasksModal')">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- окна 2 -->
+    <div class="col-md-3">
+        <div class="task">
+            <div class="task-body">
+                <h5 class="task-title">Выполненые задания</h5>
+                <p class="task-text">12 заданий</p>
+                <button type="button" class="btn btn-primary border-0" onclick="openModal('completedModal')">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- окна 3 -->
+    <div class="col-md-3">
+        <div class="task">
+            <div class="task-body">
+                <h5 class="task-title">В процессе выполнения</h5>
+                <p class="task-text">12 заданий</p>
+                <button type="button" class="btn btn-primary border-0" onclick="openModal('inProgressModal')">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- окна 4 -->
+    <div class="col-md-3">
+        <div class="task">
+            <div class="task-body">
+                <h5 class="task-title">Просроченные задания</h5>
+                <p class="task-text">12 заданий</p>
+                <button type="button" class="btn btn-primary border-0" onclick="openModal('overdueModal')">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- Оформление всплывающего окна 1 -->
+
+<div id="allTasksModal" class="custom-modal">
+
+    <div class="custom-modal-content">
+
+        <button class="modal-close" onclick="closeModal('allTasksModal')">
+            &times;
+        </button>
+
+        <h2>Задания</h2>
+
+        <p>Всего заданий: 12</p>
+
+        <ul>
+            <li>Математика — решить №15–20</li>
+            <li>Python — написать программу</li>
+            <li>История — подготовить доклад</li>
+        </ul>
+
+        <button class="btn btn-secondary" onclick="closeModal('allTasksModal')">
+            Закрыть
+        </button>
+    </div>
+</div>
+
+<!-- Оформление всплывающего окна 2 -->
+<div id="completedModal" class="custom-modal">
+
+    <div class="custom-modal-content">
+
+        <button class="modal-close" onclick="closeModal('completedModal')">
+            &times;
+        </button>
+
+        <h2>Выполненные задания</h2>
+
+        <p>Здесь будут выполненные задания.</p>
+
+        <button class="btn btn-secondary" onclick="closeModal('completedModal')">
+            Закрыть
+        </button>
+    </div>
+</div>
+
+<!-- Оформление всплывающего окна 3 -->
+
+<div id="inProgressModal" class="custom-modal">
+
+    <div class="custom-modal-content">
+
+        <button class="modal-close" onclick="closeModal('inProgressModal')">
+            &times;
+        </button>
+
+        <h2>В процессе</h2>
+
+        <p>Здесь будут отображаться задания в процессе.</p>
+
+        <button class="btn btn-secondary" onclick="closeModal('inProgressModal')">
+            Закрыть
+        </button>
+    </div>
+</div>
+
+<!-- Оформление всплывающего окна 4 -->
+<div id="overdueModal" class="custom-modal">
+
+    <div class="custom-modal-content">
+
+        <button class="modal-close" onclick="closeModal('overdueModal')">
+            &times;
+        </button>
+
+        <h2>Просроченные</h2>
+
+        <p>Здесь будут отображаться просроченные задания.</p>
+
+        <button class="btn btn-secondary" onclick="closeModal('overdueModal')">
+            Закрыть
+        </button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- JS -->
+
+<script>
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+
+    if (modal) {
+        modal.style.display = "flex";
+    } else {
+        console.log("Модальное окно не найдено:", modalId);
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+{% endblock %}

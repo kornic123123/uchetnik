@@ -1,0 +1,67 @@
+/* фон */
+body {
+    background-color: #222222;
+}
+/* информационные надписи */
+.info-title {
+    color: black;
+}
+
+
+/* белая карточка под шапкой */
+.main-content {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 700px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+
+/* заливка карточки на главной странице */
+.task {
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+
+/*Оформление окон заданий*/
+
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.custom-modal-content {
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}

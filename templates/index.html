@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+<i><h2 class="info-title">Информация</h2></i>
+
+<div class="row mt-4">
+
+    <div class="col-md-3">
+        <div class="task">
+            <div class="task-body">
+                <h5 class="task-title">Управляйте</h5>
+                <p class="task-text">
+                    Налаживает общую работу.
+                    В Трекере разные отделы собираются в общем пространстве,
+                    где можно управлять задачами и проектами.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+        <div class="task">
+            <div class="task-body">
+                <h5 class="task-title">Контролируй</h5>
+                <p class="task-text">
+                    Здесь отображается информация о ваших учебных заданиях.
+                    А так же и состояние выполненых заданий.
+                </p>
+            </div>
+        </div>
+    </div>
+
+        <div class="col-md-3">
+        <div class="task">
+            <button type="button" class="task-body border-0">
+                <h5 class="task-title">Скачать приложение</h5>
+                <p class="task-text">
+                    Скачайте приложение нажав на кнопку.
+                </p>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

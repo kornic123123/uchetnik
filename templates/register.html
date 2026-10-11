@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Регистрация</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <h1>Регистрация</h1>
+
+    <label>Почта</label>
+    <input type="email" class="form-control">
+
+    <label>Никнейм</label>
+    <input type="text" class="form-control">
+
+    <label>Пароль</label>
+    <input type="password" class="form-control">
+
+    <label>Повторите пароль</label>
+    <input type="password" class="form-control">
+
+    <button class="btn btn-primary mt-3">
+        Зарегистрироваться
+    </button>
+
+</div>
+
+</body>
+
+</html>
