@@ -1,26 +1,22 @@
 /* ШАПКА */
-
 .profile-header {
     position: relative;
     width: 90%;
     max-width: 1400px;
     height: 500px;
-    margin: 0px auto;
-    background-color: rgb(174, 195, 245);
+    margin: 0 auto;
+    background-color: #a8c8f0;
     padding: 15px 30px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 /* ЛОГОТИП */
-
 .header-logo {
     position: absolute;
     left: 200px;
     top: 110px;
 }
-
 
 .header_img {
     width: 400px;
@@ -28,22 +24,17 @@
     object-fit: contain;
 }
 
-
 /* НАЗВАНИЕ ПРИЛОЖЕНИЯ */
-
 .header-title {
     position: absolute;
     left: 80px;
     top: 50px;
-    color: #444444;
+    color: #333333;
     font-size: 50px;
     font-weight: 600;
 }
 
-
-
 /* НАВИГАЦИЯ ПО ЦЕНТРУ */
-
 .header-nav {
     position: absolute;
     top: 20px;
@@ -54,19 +45,18 @@
 }
 
 .header-nav a {
-    color: black;
+    color: #333333;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 .header-nav a:hover {
-    color: #cccccc;
+    color: #666666;
 }
 
-
 /* КНОПКИ СПРАВА СВЕРХУ */
-
 .header-auth {
     position: absolute;
     top: 15px;
@@ -80,4 +70,12 @@
     background-color: #ff8c00;
     border-color: #ff8c00;
     color: white;
+    transition: all 0.2s ease;
+}
+
+.header-auth a:hover {
+    background-color: #e67e00;
+    border-color: #e67e00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
