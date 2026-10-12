@@ -38,7 +38,7 @@
 .header-nav {
     position: absolute;
     top: 30px;
-    left: 40%;
+    left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 35px;

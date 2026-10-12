@@ -75,22 +75,6 @@ body {
     color: #ff8c00;
 }
 
-/* шапка страницы задач */
-.top-nav {
-    position: relative;
-    width: 90%;
-    max-width: 1400px;
-    height: 85px;
-    margin: 0 auto;
-    background-color: #a8c8f0;
-    padding: 15px 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
 
 /* кнопки навигации */
 .top-nav a {
@@ -116,4 +100,19 @@ body {
 .top-nav a:active {
     transform: translateY(0);
     box-shadow: none;
-}ч
+}
+
+/* Кнопка вернуться назад */
+.back-button {
+    display: inline-block;
+    margin: 20px 0 0 5%;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
